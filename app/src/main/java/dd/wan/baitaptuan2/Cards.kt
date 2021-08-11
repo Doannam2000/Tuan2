@@ -1,26 +1,21 @@
 package dd.wan.baitaptuan2
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_cards.*
 
-class MainActivity : AppCompatActivity() {
+class Cards : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_cards)
         getSupportActionBar()!!.hide()
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-        nav_menu.background = null
-        appCompatButton2.setOnClickListener{
-            startActivity(Intent(this,Pay::class.java))
-        }
-        viewCard.setOnClickListener {
-            startActivity(Intent(this,Cards::class.java))
+        imageView7.setOnClickListener{
+            finish()
         }
     }
 }
