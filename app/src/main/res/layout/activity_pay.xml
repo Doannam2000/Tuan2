@@ -9,44 +9,32 @@
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/linePay1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/guiline_vertical"
         app:layout_constraintGuide_percent="0.0472" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/linePay2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/guiline_vertical"
         app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/linePay3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.1223" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/linePay4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.372" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/linePay5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.4276" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/linePay6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.8" />
 
     <ImageView
@@ -59,10 +47,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginLeft="7dp"
-        android:fontFamily="@font/montserrat_medium"
+        style="@style/text_medium"
         android:text="Revisar y enviar "
         android:textColor="#1b1b1b"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -112,19 +98,15 @@
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="davidpaz@correo.com "
+                style="@style/text_medium"
+                android:text="davidpaz@correo.com"
                 android:textColor="#999999"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView2"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
+                style="@style/text_medium"
                 android:text="Mensaje"
                 android:textColor="#1b1b1b"
                 android:textSize="10sp"
@@ -135,10 +117,8 @@
 
             <TextView
                 android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:fontFamily="@font/montserrat_medium"
+                style="@style/text_medium"
                 android:text="Este es el dinero de la entradas…"
                 android:textColor="#666666"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -174,9 +154,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_semibold"
+                    style="@style/text_semibold"
                     android:paddingLeft="23dp"
                     android:paddingTop="8dp"
                     android:paddingRight="23dp"
@@ -212,10 +190,8 @@
 
                 <TextView
                     android:id="@+id/textView18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_semibold"
                     android:layout_marginLeft="22dp"
-                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Tipo de pago "
                     android:textColor="#1b1b1b"
                     android:textSize="14sp"
@@ -235,10 +211,8 @@
 
                 <TextView
                     android:id="@+id/textView22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_semibold"
                     android:layout_marginRight="4dp"
-                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Personal"
                     android:textColor="#666666"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -274,11 +248,9 @@
 
                 <TextView
                     android:id="@+id/textView19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/montserrat_semibold"
+                    style="@style/text_semibold"
                     android:text="BBVA"
                     android:textColor="#1b1b1b"
                     android:textSize="16sp"
@@ -286,11 +258,9 @@
                     app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="****9889"
+                    style="@style/text_medium"
                     android:textColor="#999999"
+                    android:text="****9889"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@+id/textView19"
                     app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -322,10 +292,8 @@
 
                 <TextView
                     android:id="@+id/textView20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_semibold"
                     android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Tarifas por transacción "
                     android:textColor="#1b1b1b"
                     android:textSize="14sp"
@@ -335,10 +303,8 @@
 
                 <TextView
                     android:id="@+id/textView23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginRight="16dp"
-                    android:fontFamily="@font/montserrat_semibold"
+                    style="@style/text_semibold"
                     android:text="0,00€"
                     android:textColor="#666666"
                     android:textSize="16sp"
@@ -364,10 +330,8 @@
 
                 <TextView
                     android:id="@+id/textView21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_semibold"
                     android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/montserrat_semibold"
                     android:text="Tú pagas"
                     android:textColor="#1b1b1b"
                     android:textSize="14sp"
@@ -376,9 +340,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_semibold"
+                    style="@style/text_semibold"
                     android:layout_marginRight="16dp"
                     android:text="20,00€"
                     android:textColor="#00d090"

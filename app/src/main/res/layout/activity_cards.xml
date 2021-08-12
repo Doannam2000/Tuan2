@@ -9,79 +9,57 @@
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/guiline_vertical"
         app:layout_constraintGuide_percent="0.0472" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/guiline_vertical"
         app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.210" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.352" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.467" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.563" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.877" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.654" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.677" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.768" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.786" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -125,9 +103,7 @@
         app:layout_constraintStart_toStartOf="@+id/line1" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_semibold"
+        style="@style/text_semibold"
         android:text="Cuentas bancarias y tarjetas "
         android:textColor="#fff"
         android:textSize="20sp"
@@ -145,10 +121,9 @@
         app:layout_constraintTop_toTopOf="@+id/line3" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Mis tarjetas"
         android:textColor="#001d50"
+        style="@style/text_semibold"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/line5"
         app:layout_constraintStart_toStartOf="@+id/line1"
@@ -181,10 +156,9 @@
 
             <TextView
                 android:id="@+id/textView25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_semibold"
                 android:layout_marginLeft="30dp"
-                android:fontFamily="@font/montserrat_semibold"
+
                 android:text="Mastercard"
                 android:textColor="#1b1b1b"
                 android:textSize="16sp"
@@ -192,9 +166,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
+                style="@style/text_medium"
                 android:text="****9889"
                 android:textColor="#999999"
                 android:textSize="14sp"
@@ -261,10 +233,9 @@
 
             <TextView
                 android:id="@+id/textView26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_semibold"
                 android:layout_marginStart="22dp"
-                android:fontFamily="@font/montserrat_semibold"
+
                 android:text="Mastercard"
                 android:textColor="#1b1b1b"
                 android:textSize="16sp"
@@ -273,9 +244,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
+                style="@style/text_medium"
                 android:text="****9889"
                 android:textColor="#999999"
                 android:textSize="14sp"
@@ -324,10 +293,9 @@
 
             <TextView
                 android:id="@+id/textView27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_semibold"
                 android:layout_marginStart="22dp"
-                android:fontFamily="@font/montserrat_semibold"
+
                 android:text="Mastercard"
                 android:textColor="#1b1b1b"
                 android:textSize="16sp"
@@ -336,9 +304,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
+                style="@style/text_medium"
                 android:text="****9889"
                 android:textColor="#999999"
                 android:textSize="14sp"

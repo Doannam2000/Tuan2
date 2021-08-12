@@ -4,77 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#f6f8fa">
+    android:background="#f6f8fa"
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.0736" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.102" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.352" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.436" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.527" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.617" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.834" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.9" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/guiline_vertical"
         app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        style="@style/guiline_vertical"
         app:layout_constraintGuide_percent="0.95" />
 
     <androidx.cardview.widget.CardView
@@ -141,14 +121,12 @@
                 android:text="HOY"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_medium"
                 android:layout_marginEnd="108dp"
-                android:fontFamily="@font/montserrat_medium"
                 android:text="Mensaje"
                 android:textColor="#fff"
                 android:textSize="10sp"
@@ -157,10 +135,8 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_medium"
                 android:layout_marginTop="2dp"
-                android:fontFamily="@font/montserrat_medium"
                 android:text="Por la cena..."
                 android:textColor="#fff"
                 android:textSize="14sp"
@@ -176,17 +152,18 @@
                 android:textColor="#022c59"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/textView14"
-                app:layout_constraintTop_toTopOf="@+id/textView14"/>
+                app:layout_constraintTop_toTopOf="@+id/textView14" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
                 app:cardCornerRadius="48sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp">
+                app:layout_constraintTop_toTopOf="parent">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -195,10 +172,9 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_medium"
                 android:layout_marginTop="8dp"
-                android:fontFamily="@font/montserrat_medium"
+
                 android:text="Nina te ha enviado"
                 android:textColor="#fff"
                 android:textSize="14sp"
@@ -207,9 +183,7 @@
 
             <TextView
                 android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
+                style="@style/text_semibold"
                 android:text="20,00€"
                 android:textColor="#fff"
                 android:textSize="28sp"
@@ -233,11 +207,10 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_semibold"
+        style="@style/text_semibold"
         android:text="Enviar de nuevo"
         android:textColor="#003087"
         android:textSize="14sp"
@@ -281,16 +254,14 @@
 
             <TextView
                 android:id="@+id/nameFriend1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
+                style="@style/text_semibold"
                 android:text="Carlos Roca"
                 android:textColor="#666666"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imgFriend1"
                 app:layout_constraintStart_toStartOf="@+id/imgFriend1"
-                app:layout_constraintTop_toBottomOf="@+id/imgFriend1"/>
+                app:layout_constraintTop_toBottomOf="@+id/imgFriend1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -316,9 +287,7 @@
 
             <TextView
                 android:id="@+id/nameFriend2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
+                style="@style/text_semibold"
                 android:text="Ruby Sanz"
                 android:textColor="#666666"
                 android:textSize="10sp"
@@ -345,15 +314,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:src="@drawable/bitmap_copy_4" />
             </androidx.cardview.widget.CardView>
 
             <TextView
                 android:id="@+id/nameFriend3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
+                style="@style/text_semibold"
                 android:text="Mary Rich"
                 android:textColor="#666666"
                 android:textSize="10sp"
@@ -387,9 +353,7 @@
 
             <TextView
                 android:id="@+id/nameFriend4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
+                style="@style/text_semibold"
                 android:text="José Porto"
                 android:textColor="#666666"
                 android:textSize="10sp"
@@ -402,10 +366,8 @@
 
     <TextView
         android:id="@+id/actividad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/text_semibold"
         android:layout_marginBottom="17dp"
-        android:fontFamily="@font/montserrat_semibold"
         android:text="Actividad"
         android:textColor="#003087"
         android:textSize="14sp"
@@ -414,10 +376,8 @@
 
     <TextView
         android:id="@+id/ver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/text_medium"
         android:layout_marginBottom="17dp"
-        android:fontFamily="@font/montserrat_medium"
         android:text="Ver más movimientos"
         android:textColor="#025ed7"
         android:textSize="12sp"
@@ -447,11 +407,10 @@
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_medium"
                     android:layout_marginLeft="19dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat_medium"
+
                     android:text="El corte inglés"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -459,8 +418,7 @@
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_medium"
                     android:layout_marginTop="2dp"
                     android:text="Pago aceptado"
                     android:textColor="#999999"
@@ -470,14 +428,13 @@
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
+                    style="@style/text_regular"
+                    android:layout_marginRight="20dp"
                     android:text="-50€"
                     android:textColor="#1b1b1b"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toEndOf="@+id/textView4"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -497,11 +454,9 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_medium"
                     android:layout_marginLeft="19dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat_medium"
                     android:text="Maria Lujan"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -509,8 +464,7 @@
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_medium"
                     android:layout_marginTop="2dp"
                     android:text="Pago aceptado"
                     android:textColor="#999999"
@@ -520,17 +474,15 @@
 
                 <TextView
                     android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
+                    style="@style/text_regular"
+                    android:layout_marginRight="20dp"
                     android:text="650€"
                     android:textColor="#00c55b"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintStart_toEndOf="@+id/textView6"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.444" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:layout_width="0dp"
@@ -548,19 +500,17 @@
 
                 <TextView
                     android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_medium"
                     android:layout_marginLeft="19dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat_medium"
                     android:text="Maria Lujan"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/text_medium"
                     android:layout_marginTop="2dp"
                     android:text="Pago aceptado"
                     android:textColor="#999999"
@@ -569,14 +519,13 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_regular"
+                    style="@style/text_regular"
+                    android:layout_marginRight="20dp"
                     android:text="250€"
                     android:textColor="#00c55b"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintHorizontal_bias="1"
                     app:layout_constraintStart_toEndOf="@+id/textView8"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -596,8 +545,8 @@
             android:id="@+id/bottomAppbar"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            app:fabCradleMargin="10dp"
             android:layout_gravity="bottom"
+            app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="20dp">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -605,7 +554,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
-                app:menu="@menu/bottom_nav_menu"/>
+                app:menu="@menu/bottom_nav_menu" />
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
