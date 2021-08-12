@@ -18,6 +18,11 @@
         app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line12"
+        style="@style/guiline_horizontal"
+        app:layout_constraintGuide_percent="0.0934" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line3"
         style="@style/guiline_horizontal"
         app:layout_constraintGuide_percent="0.210" />
@@ -63,6 +68,7 @@
         app:layout_constraintGuide_percent="0.786" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/line7"
@@ -75,17 +81,15 @@
             android:layout_height="match_parent"
             android:elevation="10sp"
             app:cardBackgroundColor="#003087"
-            app:cardPreventCornerOverlap="true"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp" />
+            app:cardPreventCornerOverlap="true" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_height="0dp"
         android:src="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/line12"
         app:layout_constraintStart_toStartOf="@+id/line1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -109,7 +113,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintStart_toStartOf="@+id/line1"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toTopOf="@+id/line12" />
 
     <ImageView
         android:layout_width="0dp"
@@ -158,7 +162,6 @@
                 android:id="@+id/textView25"
                 style="@style/text_semibold"
                 android:layout_marginLeft="30dp"
-
                 android:text="Mastercard"
                 android:textColor="#1b1b1b"
                 android:textSize="16sp"
