@@ -17,10 +17,11 @@ class MainActivity : AppCompatActivity() {
         )
         nav_menu.background = null
         appCompatButton2.setOnClickListener{
-            startActivity(Intent(this,Pay::class.java))
+            startActivity(Intent(this,Cards::class.java))
         }
         viewCard.setOnClickListener {
-            startActivity(Intent(this,Cards::class.java))
+
+            startActivity(Intent(this,Pay::class.java))
         }
     }
 }

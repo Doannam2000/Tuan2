@@ -79,9 +79,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:elevation="10sp"
             app:cardBackgroundColor="#003087"
-            app:cardPreventCornerOverlap="true" />
+            app:cardPreventCornerOverlap="true"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
@@ -118,6 +118,7 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:scaleType="fitCenter"
         android:src="@drawable/group"
         app:layout_constraintBottom_toTopOf="@+id/line4"
         app:layout_constraintEnd_toStartOf="@+id/line2"
@@ -125,9 +126,10 @@
         app:layout_constraintTop_toTopOf="@+id/line3" />
 
     <TextView
+        android:id="@+id/textView28"
+        style="@style/text_semibold"
         android:text="Mis tarjetas"
         android:textColor="#001d50"
-        style="@style/text_semibold"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/line5"
         app:layout_constraintStart_toStartOf="@+id/line1"
@@ -238,8 +240,7 @@
                 android:id="@+id/textView26"
                 style="@style/text_semibold"
                 android:layout_marginStart="22dp"
-
-                android:text="Mastercard"
+                android:text="Visa black"
                 android:textColor="#1b1b1b"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView9"
@@ -248,7 +249,7 @@
 
             <TextView
                 style="@style/text_medium"
-                android:text="****9889"
+                android:text="****8764"
                 android:textColor="#999999"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -298,8 +299,7 @@
                 android:id="@+id/textView27"
                 style="@style/text_semibold"
                 android:layout_marginStart="22dp"
-
-                android:text="Mastercard"
+                android:text="Visa black"
                 android:textColor="#1b1b1b"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView10"
@@ -308,7 +308,7 @@
 
             <TextView
                 style="@style/text_medium"
-                android:text="****9889"
+                android:text="****8764"
                 android:textColor="#999999"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"

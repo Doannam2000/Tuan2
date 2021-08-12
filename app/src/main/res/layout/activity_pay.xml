@@ -100,6 +100,7 @@
                 android:id="@+id/textView15"
                 style="@style/text_medium"
                 android:text="davidpaz@correo.com"
+                android:layout_marginTop="6dp"
                 android:textColor="#999999"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -109,11 +110,10 @@
                 style="@style/text_medium"
                 android:text="Mensaje"
                 android:textColor="#1b1b1b"
+                android:layout_marginBottom="6dp"
                 android:textSize="10sp"
                 app:layout_constraintBottom_toTopOf="@+id/textView16"
-                app:layout_constraintStart_toStartOf="@+id/textView15"
-                app:layout_constraintTop_toBottomOf="@+id/textView15"
-                app:layout_constraintVertical_bias="0.829" />
+                app:layout_constraintStart_toStartOf="@+id/textView15"/>
 
             <TextView
                 android:id="@+id/textView16"
@@ -147,14 +147,15 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="37dp"
                 app:cardBackgroundColor="#00d090"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView3"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3">
+                app:layout_constraintTop_toTopOf="@+id/textView2">
 
                 <TextView
                     style="@style/text_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:paddingLeft="23dp"
                     android:paddingTop="8dp"
                     android:paddingRight="23dp"
