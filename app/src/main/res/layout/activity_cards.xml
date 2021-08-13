@@ -116,9 +116,10 @@
         app:layout_constraintTop_toTopOf="@+id/line12" />
 
     <ImageView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:scaleType="fitCenter"
+        android:maxWidth="2500dp"
+        android:scaleType="fitXY"
         android:src="@drawable/group"
         app:layout_constraintBottom_toTopOf="@+id/line4"
         app:layout_constraintEnd_toStartOf="@+id/line2"
@@ -155,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:src="@drawable/mastercard_2"
+                android:src="@drawable/ic_mastercard_2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -231,7 +232,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:src="@drawable/combined_shape"
+                android:src="@drawable/ic_combined_shape"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -289,7 +290,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:src="@drawable/combined_shape"
+                android:src="@drawable/ic_combined_shape"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
